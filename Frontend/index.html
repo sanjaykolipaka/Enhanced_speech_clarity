@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://learn.g2.com/hs-fs/hubfs/free%20audio%20recording%20software.png?width=690&name=free%20audio%20recording%20software.png" id="backgroundImage">
+    <div class="container">
+        <h1>Sound Optimization Tool</h1>
+        
+       
+        <div class="upload-section">
+            <h3>Upload or Record Audio</h3>
+            <input type="file" id="audioInput" accept="audio/*" onchange="handleFileUpload(event)">
+            <button id="recordButton" onclick="startRecording()">Start Recording</button>
+            <button id="stopButton" disabled onclick="stopRecording()">Stop Recording</button>
+        </div>
+
+        <!-- Audio Player Section -->
+        <div class="audio-section">
+            <h3>Uploaded/Recorded Audio</h3>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+
+        <!-- Processing Button -->
+        <div class="processing-section">
+            <button id="processButton" onclick="processAudio()">Process Audio</button>
+        </div>
+
+        <!-- Processed Audio Section -->
+        <div class="processed-section">
+            <h3>Processed Audio</h3>
+            <audio id="processedAudioPlayer" controls></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

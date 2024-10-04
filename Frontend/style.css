@@ -1,0 +1,45 @@
+/* Set body and html to 100% height, remove margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Image styling to cover the entire screen */
+img {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;  /* 100% of the viewport width */
+    object-fit: cover; /* Ensure the image covers the screen without stretching */
+}
+
+/* Container styling for content over the image */
+.container {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.audio-section, .processed-section, .processing-section {
+    margin-top: 20px;
+}
